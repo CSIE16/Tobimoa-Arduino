@@ -14,7 +14,7 @@ MFRC522 mfrc522(SS_PIN, RST_PIN);   // Create MFRC522 instance.
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 ESP8266WiFiMulti wifiMulti;
 boolean connectioWasAlive = true;
-int readerID = 1;
+int readerID = 0;//Hidden stamp readerID
 
 void setup() 
 {
@@ -112,53 +112,63 @@ void loop()
       switch(stamp){
       case 1: 
             lcd.setCursor(0,0);                       // 0번째 줄 0번째 셀부터 입력하게 합니다.
-            lcd.print("1st Stamp!");
-            stamp++;              
+            lcd.print("1st Stamp!");  
+            lcd.setCursor(0,1);                       // 1번째 줄 0번째 셀부터 입력하게 합니다.
+            lcd.print("(^0^) Hidden!");           
             break;  
       case 2:  
             lcd.setCursor(0,0);                       
             lcd.print("2nd Stamp!");
-            stamp = 1;              
+            lcd.setCursor(0,1);                       
+            lcd.print("(^0^) Hidden!");              
             break;
       case 3:  
             lcd.setCursor(0,0);                       
             lcd.print("3rt Stamp!");
-            stamp = 1;              
+            lcd.setCursor(0,1);                       
+            lcd.print("(^0^) Hidden!");            
             break;  
       case 4:  
             lcd.setCursor(0,0);                       
             lcd.print("4th Stamp!");
-            stamp = 1;              
+            lcd.setCursor(0,1);                       
+            lcd.print("(^0^) Hidden!");             
             break;  
       case 5:  
             lcd.setCursor(0,0);                       
             lcd.print("5th Stamp!");
-            stamp = 1;              
+            lcd.setCursor(0,1);                       
+            lcd.print("(^0^) Hidden!");              
             break;  
       case 6:  
             lcd.setCursor(0,0);                       
             lcd.print("6th Stamp!");
-            stamp = 1;              
+            lcd.setCursor(0,1);                       
+            lcd.print("(^0^) Hidden!");             
             break;  
       case 7:  
             lcd.setCursor(0,0);                       
             lcd.print("7th Stamp!");
-            stamp = 1;              
+            lcd.setCursor(0,1);                       
+            lcd.print("(^0^)/ Hidden!");              
             break;  
       case 8:  
             lcd.setCursor(0,0);                       
             lcd.print("8th Stamp!");
-            stamp = 1;              
+            lcd.setCursor(0,1);                       
+            lcd.print("(^0^) Hidden!");              
             break;  
       case 9:  
             lcd.setCursor(0,0);                       
             lcd.print("9th Stamp!");
-            stamp = 1;              
+            lcd.setCursor(0,1);                       
+            lcd.print("(^0^) Hidden!");               
             break;  
       case 10:  
             lcd.setCursor(0,0);                       
             lcd.print("10th Stamp!");
-            stamp = 1;              
+            lcd.setCursor(0,1);                       
+            lcd.print("(^0^) Hidden!");               
             break;  
               
       default:  
