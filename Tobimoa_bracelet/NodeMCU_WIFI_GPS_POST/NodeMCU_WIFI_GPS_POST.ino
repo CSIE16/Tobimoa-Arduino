@@ -20,9 +20,9 @@ void setup() {
   ss.begin(9600); //gps통신
 
   //사용할 wifi 등록
-  wifiMulti.addAP("ALCUK", "ALCUK451");
-  wifiMulti.addAP("FAN", "freemeeting");
-  wifiMulti.addAP("Catholic_Semtle", "semtle3702");
+  wifiMulti.addAP("", ""); //your wifi ssid, passwd
+  wifiMulti.addAP("", ""); //your wifi ssid, passwd
+  wifiMulti.addAP("", ""); //your wifi ssid, passwd
 }
 
 void loop() {
